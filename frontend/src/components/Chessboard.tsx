@@ -1,4 +1,4 @@
-import { Chess, SQUARES, type Color, type PieceSymbol, type Square } from "chess.js"
+import { type Color, type PieceSymbol, type Square } from "chess.js"
 import { useState } from "react";
 import { MOVE } from "../screens/Game";
 
@@ -15,7 +15,7 @@ export const ChessBoard = ({ chess, board, socket, setBoard, started, myColor }:
     myColor: 'white' | 'black';
 }) => {
     const [from, setFrom] = useState<null | Square>(null);
-    const [to, setTo] = useState<null | Square>(null);
+    const [, setTo] = useState<null | Square>(null);
     const isFlipped = myColor === 'black';
 
     return <div className="text-gray-900 ">

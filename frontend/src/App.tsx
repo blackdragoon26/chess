@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -7,22 +6,22 @@ import { Game } from './screens/Game';
 
 function App() {
   return (
-      <div className='h-screen bg-slate-969'>
+    <div className='h-screen bg-slate-969'>
 
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing/>} />
-          <Route path="/game" element={<Game/>} />
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/game" element={<Game />} />
 
-        </Routes>
+          </Routes>
 
-      </BrowserRouter>
-    </>
+        </BrowserRouter>
+      </>
 
 
 
-      </div>
+    </div>
 
   )
 
